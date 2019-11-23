@@ -8,6 +8,7 @@ target 'iOS_Instagram' do
   # Pods for iOS_Instagram
    pod "Parse"
    pod "AlamofireImage"
+   pod "MessageInputBar"
 
   target 'iOS_InstagramTests' do
     inherit! :search_paths
@@ -15,7 +16,8 @@ target 'iOS_Instagram' do
   end
 
   target 'iOS_InstagramUITests' do
-    # Pods for testing
+   inherit! :search_paths    
+   # Pods for testing
   end
 
 end
